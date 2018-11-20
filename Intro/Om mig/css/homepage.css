@@ -1,0 +1,28 @@
+body{
+    background-image: url(/Bilder/pattern1.jpg);
+    background-repeat: repeat-y repeat-x;
+    background-color: whitesmoke;
+}
+
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main main right'
+    'menu main main main main footer';
+  grid-gap: 6px;
+  background-color: rgba(100, 100, 100, 0.95);
+  padding: 10px;
+}
+.grid-container > div {
+    background-color: rgba(245, 245, 245, 0.8);
+    text-align: center;
+    padding: 115px;
+    font-size: 30px;
+  }

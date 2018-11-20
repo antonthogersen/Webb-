@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kodchasan', sans-serif;
+    color: #F2FBE0;
+    
+}
+
+
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    min-height: 60px;
+    line-height: 60px;
+    background-color: #A6C96E;
+    animation: navbar-animation 0.6s  0s linear;
+}
+
+@keyframes navbar-animation {
+    0%{
+        transform: translateY(-100px);
+        }
+    100%{
+        transform:  translateY(0);
+        }
+}
+
+.logo {
+    flex: 3 auto;
+    font-size: 28px;
+    padding-left: 25px; }
+
+.logo_text {
+    color: #F2FBE0;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: #F2FBE0; }
+
+.navbar_links {
+    flex: 1 auto;
+    display: flex;
+    justify-content: flex-end; }
+
+.navbar_links-link {
+    flex: 1;
+    text-align: center;
+    width: 80px;
+    text-decoration: none; }
+    .navbar_links-link:hover {
+        color: #2A475B;
+        background-color: #779645;
+        transition: all .3s; }
+
+ header {
+    background-image: url(/img/hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+ }       
+  
+ footer {
+    background-color: #A6C96E;
+    display: flex;
+    width: 100%;
+
+    min-height: 120px;
+ }
+
+ .footer-us {
+    display: flex;
+    flex: 1 20%;
+    flex-direction: column;
+    
+ }
+ 
+ h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    letter-spacing: 2px
+ }
+
+ ul {
+    text-align: center;
+    list-style: none;
+ }
+
+
+ .footer-contact {
+    flex: 1 50%;
+    flex-direction: column;
+ }
+
+ .footer-socialmedia {
+    flex: 1 20%;
+    flex-direction: column;
+
+ }
+
+ a {
+     text-decoration: none;
+     
+ }
+
+ i {
+     font-size: 60px;
+     margin: 10px;
+
+ }
+ 
+ input {
+    margin-top: 10px; 
+    width: 300px;
+     height: 50px;
+     background-color: #779645;
+     border-style: none;
+     box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.5);
+    
+ }
+
+
+ 
+ 
+.p-slut-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    right: 25%;
+    border-radius: 20px;
+    background-color: #77964580;
+    box-shadow: 0px 1px 1px 1px  #779645a5;
+}
+
+.h2-slut {
+    font-size: 45px;
+    text-align: center;
+}
+
+.p-slut {
+    text-align: center; 
+    font-size: 22px;
+}
+.img-slut img {
+    position: absolute;
+    width: 30%;
+    top: 25%;
+    left: 5%;
+    border-radius: 10px;
+}
+
+
+
+
+    

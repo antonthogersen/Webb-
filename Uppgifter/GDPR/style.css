@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+    /* Endast en pattern som background och då repeatar så hela sidan blir den */
+body{
+    /* Ändrar backgrunden på hela bodyn */
+    background-color: rgba(130, 130, 130, 0.8);
+    /* Overflow hidden gör så att scrollen försvinner och då får man mer plats för bodyn */
+    overflow: hidden;
+}
+    /* Ändrar naven */
+nav{
+    /* Höjden på hur nav baren */
+    height: 85px;
+    background-color: rgb(255, 92, 92); 
+    /* Gör bara så det blir en linje längst ner och inte runt hela */
+    border-bottom: 2px black solid;
+    /* Rundar av linjen/bordern */
+    border-radius: 5px;
+    /* Ändrar fonten */
+    font-family: sans-serif;
+}
+    /* Ändrar bara länkar i nav baren */
+nav a{
+    color: rgb(255, 255, 255);
+    /* Tar bort standarden dekoration på text */
+    text-decoration: none;
+    /* Om man gör samma lineheight som hieght plaserar den på mitten */
+    line-height: 85px;
+    /* Gör så att den går från höger till vänster */
+    float: right;
+    /* Gör så att att det blir mer utrymme mellan länkarna och scrollen */
+    margin-right: 30px;
+    /* Ändrar hur stor fonten blir */
+    font-size: 30px;    
+}
+    /* När man har musen över Länkarna blir det en annan färg */
+nav a:hover{
+    color: gainsboro;
+}
+.title{
+    /* Går frånt vänster till höger */
+    float: left;
+    /* Då blir fonten inte en exakta pixel och jag gjorde endast det för jag kan */
+    font-size: 125%;
+    /* Gör så att insidan får mer utrymme mellan saker */
+    padding: 10px;
+    /* Gör så att widthen bara blir 400px */
+    width: 400px;   
+    /* Då blir det texten i centern i den diven */
+    text-align: center;
+    /* ändrar färg på texten */
+    color: white;
+}
+    /* Info-box gör så att info-boxarna flyttas inåt från höger och vänster och inte uppåt och neråt */
+.info-box{
+    /* 0 är höger och vänster och 20 är uppe å nere */
+    padding: 0 20px;
+}
+.info-space{
+    /* Heigthen på denna info bar */
+    height: 250px;
+    width: 50%;
+}
+.infobar{
+    /* box-sizing: border-box gör att padding/border storlek räknas in i hela bredden */
+    display: block;
+    margin: 10px auto;
+    width: 49.5%;
+    height: 225px;
+    padding: 30px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(0, 0, 0) solid;
+    border-radius: 13px;
+}
+.big-box{
+    box-sizing: border-box;
+    width: 80%;
+    height: 10000px;
+    margin: 0 auto;
+    background-color: rgb(75, 164, 220);
+    text-align: center; 
+}
+.big-box h1{
+    text-decoration: underline;
+}
+.big-box p{
+    width: 50%;
+    margin: 10px auto;
+    padding-bottom: 50px;
+}
+/* Hur stort och vilken färg footer ska va, + de 3 längst ner gör så att footern ligger längst, bottom 0 gör så att den kommer till botten
+    och absolute gör så den verkligen kommer till botten medans margin gör så att den inte kommer röra på sig efter de. skulle jag förklara bäst */
+footer{
+    background-color: rgb(255, 92, 92);
+    height: 60px;
+    width: 100%;
+    /* Får båda egenskaperna på block och inline och de är fyrkanter som som går i linjer på rad vetfan vad jag skriver */
+    display: inline-block;
+    border-top: 2px rgb(0, 0, 0) solid;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+}
+/* Widthen gör så att den enbart tar up 50% utav 100% så då kan jag göra båda 50% så blir det 100% på widthen och linehieghten gör så att den är 
+    på mitten av footern och sen float gör så att den åker från den sidan till den andra left ->, right <- */
+.links{
+    width: 50%;
+    float: right;
+    line-height: 50px;
+}
+.links a{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+.links a:hover{
+    color: gray;
+}
+
+
+
+

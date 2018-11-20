@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(177, 177, 177);
+    margin: auto;
+    width: 800px;
+    padding: 20px;
+}
+.rubrik{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 20px;
+}
+hr{
+    width: 1200px;
+    padding: 10px;
+    margin: auto;
+}
+p{
+    font-size: 13px;
+    text-align: justify;
+    color: #3566f3;
+    padding: 0 50px;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+ul{
+    list-style: square;
+}
+ol{
+    list-style: circle;
+}
+li{
+    background: whitesmoke;
+}

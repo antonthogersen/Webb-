@@ -1,0 +1,40 @@
+/* ----- Custom Navbar ----- */
+
+body{
+    text-transform: capitalize;
+}
+.nav {
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    border: 5px solid black;
+    padding: 0 10px;
+}
+.nav h2{
+    float: left;
+    line-height: 20px;
+    padding-right: 80px;
+    padding-left: 30px;
+    font-size: 45px;
+}
+.links {
+    float: left;
+    line-height: 80px;
+}
+.links a {
+    padding-left: 80px;
+    text-decoration: none;
+    font-size: 26px;
+    color: rgb(68, 68, 68);
+}
+.links a:hover {
+    color: #000000;
+    text-transform: uppercase;
+}
+.login {
+    float: right;
+    line-height: 80px;
+}
+#loginbutton {
+    float: right;
+}

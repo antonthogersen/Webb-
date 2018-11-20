@@ -1,0 +1,94 @@
+body{
+    background-image: url(/Bilder/galaxy.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+}
+ul{
+    color: white;
+    border-right: 3px white solid;
+    margin: auto;
+    font-family: sans-serif;
+    
+    padding: 1fr;
+    width: 10em;
+    position: relative;
+}
+.links{
+    height: 100%; 
+    width: 165px; 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    background-color:  rgba(0, 0, 0, 0.5) ;
+    border-right: 1em rgb(49, 49, 49);  
+    overflow-x: hidden; 
+}
+
+
+
+a:visited{
+    color: white;
+}
+a:hover{
+    color: rgb(100, 100, 100)
+}
+a:active{
+    color: white;
+}
+a:link{
+    color: white;
+}
+
+h1{
+    color: white;
+    padding: 3px;
+    margin: auto;
+    width: 200px;
+
+    text-align: center;
+    text-decoration: underline;
+}
+p{
+    color: white;
+    border: 2px black double;
+    
+    margin: auto;
+    padding: 20px;
+}
+h2{
+    color: white;
+    text-decoration: underline;
+}
+.grid-template{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    grid-gap: 1emx;
+    padding: 10px;
+    overflow: hidden;
+    justify-content: end;
+
+    -webkit-filter: drop-shadow(0px 0px 0px rgb(87, 0, 82));
+	-webkit-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.grid-item{
+    text-align: center;
+    padding: 20px;
+    position: static;
+    border: 2px black solid;
+    width: 380px;
+    margin: auto;
+}
+.space{
+    border: 2px black solid;
+    width: 360px;
+
+}
+.grid-template:hover{
+    -webkit-filter: drop-shadow(0px 0px 8px rgb(43, 85, 150));
+}

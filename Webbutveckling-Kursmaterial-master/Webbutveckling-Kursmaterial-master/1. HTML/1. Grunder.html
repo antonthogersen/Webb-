@@ -1,0 +1,34 @@
+Kurs: Webbutveckling 2
+Lärare: Markus Nordin
+Syfte: Kortfattat täcka grunderna för HTML
+
+HTML:
+    HTML (Hypertext Markup Language) används för att skapa strukturen för webbsidor på internet och är en av tre teknikerna vi använder för att skapa webbsidor(HTML, CSS och JavaScript). För att enkelt få en bild av hur dessa tre tekniker fungerar med varandra så kan man se på det som att HTML är skelettet, CSS är huden, ögonfärgen, hårfärgen (det estetiska) och JavaScript är musklerna och nerverna(det som gör kroppen dynamisk och funktionell).
+
+    Med HTML skapar vi då som sagt strukturen för en webbsida, och det vi menar med det är att vi placerar ut element för exempelvis paragrafer, länkar, bilder, headers och annat vi kan tänkas behöva i den ordning den ska vara. Ordningen man placerar sina element i är viktig och man bör tänka på var de hör hemma. Ta exempelvis att vi skapar en sida med information om skolan. Här börjar vi med att placera ut en header med skolans namn samt en bild. Därefter skapar vi ett navigationsfält för länkar till andra sidor, sedan har vi huvudinnehåll och avslutningsvis så har vi en footer med telefonnummer och address till skolan. Det vill säga, vi skapar strukturen från toppen till botten.
+
+
+Taggar och element:
+    Taggar och element är två ord ni kommer höra ofta, och ibland kan det bli svårt att hålla koll på vad som är vad. En tagg omges av vinkelparenteser ("<" och ">") med en eller flera bokstäver i mitten som beskriver dess funktionalitet. Exempelvis så är "<p>"-taggen en tagg för att skapa paragraf-element. De flesta taggar han en start och en sluttagg ("<p>" och "</p>") som talar om när elementet börjar och slutar. När man vill använda sig av en paragraf("<p>") på sin webbsida så måste man skapa ett element av denna. Då skapar man först en starttagg, skriver sin paragraf och sedan avslutar med en sluttagg, exempel: <p>Det här är ett paragraf-element!</p>. 
+
+    För att förenkla skillnaden: En tagg beskriver "<p>" som ensamstående medans ett element beskriver information omgiven av en start och sluttagg ("<p>Detta är ett element!</p>").
+    (Kolla upp alla olika taggar/element för HTML: https://www.w3schools.com/TAGs/)
+ 
+Attribut:
+    Attribut används för att vidare specificera egenskaper hos ett element. Det finns både lokala och globala attribut. Med globala attributer menar man attributer som kan tillämpas på alla element som exempelvis attributen "id" och "class", exempel: <p class="myClass">Denna paragraf har en class</p>. Detta element har nu klassen "myClass" som vi kan använda oss av när vi exempelvis vill skriva specificerad CSS kod för elementet (Detta går vi igenom mer när vi börjar med CSS). Med lokala attribut menar vi element-specifika attribut och som exempel tar vi "<a>"-elementet som exempel. Med "<a>" skapar vi länkar, antingen externa länkar eller lokala (mellan olika dokument) länkar. För att göra detta måste vi specificera en address länken ska leda till och detta gör vi med attributet "href". Vill vi skapa en länk till en extern webbsida behöver vi inkludera URL:en för denna och vill vi skapa en länk till ett lokalt dokument så skriver vi sökvägen till det dokumentet. Exempel för extern webbaddress: <a href="http://www.google.se">Google</a>. Exempel för lokal: <a href="AnnatDokument.html">Till andra sidan!</a>. Vid lokal länkning bör man vara noga med att inkludera filtypen i namnet(".html").
+    (Kolla upp flera attribut: https://www.w3schools.com/TAGs/ref_attributes.asp)
+        
+
+Grundläggande struktur för HTML-dokument:
+        
+    <!DOCTYPE html>                                     <!--Berättar för webbläsaren vilken version av HTML vi använder-->
+        <html>                                          <!--Början på vårat HTML dokument-->
+            <head>                                      <!--I head deklarerar vi titel, metadata, länkar till CSS/script osv-->
+                <title>Titel för vår webbsida</title>   <!--Titel element-->
+            </head>                                     <!--Slut på head-elementet-->
+            <body>                                      <!--Början på vår body, här skriver vi kod för vår struktur-->
+                <h1>Välkommen till min webbsida</h1>    <!--h1 element med text-->
+                <p>En paragraf med massa text</p>       <!--paragraf-element-->
+                <a href="http://www.google.se">GoogL</a><!--Länk till google.se med texten "GoogL"-->
+            </body>                                     <!--Slutet på vår body-->
+        </html>                                         <!--Slutet på vårat HTML dokument-->

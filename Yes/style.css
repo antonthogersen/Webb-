@@ -1,41 +1,113 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+/* Coolors https://coolors.co/1c3144-d00000-ffba08-a2aebb-3f88c5e */
+        /* #1c3144 #d000000 #ffba08 #a2aebb #3f88c5 */
+
 body {
-    background-color: #f1f1f1;
+    background-color: #1c3144;
 }
-nav {
-    height: 100px;
-    background-color: #c9c9c9;
-    font-family: 'Slabo 27px', serif;
-    text-transform: capitalize;
-}
-nav h1, a {
-    text-decoration: none;
-    line-height: 100px;
-}
-.navrubrik h1 {
-    padding-left: 10%;
-    font-size: 2rem;
-    float: left;
-}
-.navlinks a {
-    padding-right: 10%;
-    font-size: 1.2rem;
-    color: #ffffff;
-    float: right;
-}
+
 @keyframes yourAnimation{
     0%{
-        transform: scale(0.33);
+        transform: rotate(0) translateY(-100%);
         }
-    50%{
-        transform: scale(1);
+    100%{
+        transform: rotate(0) translateY(0);
         }
         
 }
 
-nav{
-    animation: yourAnimation 1s  0s ease-in;
+nav { 
+    animation: yourAnimation .3s 0s ease-in ;
+    height: 80px;
+    background-color: #3f88c5;
+    color: #ececec;
+    font-family: 'Slabo 27px', serif;
+    text-transform: capitalize;¨
+}
+
+nav h1, a {
+    text-decoration: none;
+    line-height: 80px;
+}
+
+.navrubrik h1 {
+    padding-left: 10%;
+    font-size: 3vw;
+    float: left;
+}
+
+.navlinks a {
+    text-align: center;
+    margin: 10px;
+    padding: 0 1vw;
+    width: 8%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 1.7vw;
+    color: #ffffff;
+    float: right;
+}
+
+.navlinks a:hover {
+    background-color: #2aaebb;
+    border-radius: 10px;
+    border: #ececec 1px solid;
+}
+
+main {
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.adleft img{
+    max-width: 18%;
+    max-height: 100%;
+    transform: translate(-50%);
+    position: absolute;
+    left: 11%;
+    padding-top: 3vw;
+}
+.wrapper {
+    background-color: #d00000;
+    width: 60%;
+    height: 600px;
+    margin: 20px auto;
+}
+.wrapper h3 {
+    text-align: center;
+    padding: 5px;
+    color: #ececec;
+    font-size: 1.5vw;
+}
+.wrapper p {
+    padding: 10px;
+    font-size: 1.1rem;
+}
+.leftpost img {
+    float: right;
+    height: 150px;
+    padding: 10px;
+}
+.leftpost {
+    background-color: #ffba08;
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.toppost {
+    background-color: #3f88c5;
+    width: 50%;
+    height: 50%;
+    float: right;
+}
+.bottompost {
+    background-color: #2aaebb;
+    float: right;
+    width: 50%;
+    height: 50%;
 }

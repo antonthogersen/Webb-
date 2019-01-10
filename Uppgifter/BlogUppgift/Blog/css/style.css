@@ -15,12 +15,11 @@ html {
 }
 
 body {
-    background-image: url(/img/hero.jpg);
     background-size: cover;
     background-position: 50%, 50%;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-color: #333333;
+    background-color: rgb(24, 89, 110);
 }
 
 nav {
@@ -28,7 +27,7 @@ nav {
     line-height: 8.5rem;
     border-radius: 2rem;
     box-shadow: #000000 0px 0px 10px 1px;
-    background-color: #33333375;
+    background-color: #007ea760;
     margin: 2rem auto;
     width: 95%;
 }
@@ -68,15 +67,19 @@ main {
 .posts {
     width: 65%;
     text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 400;
     padding: 2.5rem;
     float: left;
+    box-shadow: #000000 0px 0px 10px 1px;
+    background-color: #007ea760;
+    margin: 2rem 0;
+    border-radius: 1rem;
 }
 
 .post-1, .post-2, .post-3, .post-4 {
-    box-shadow: #000000 0px 0px 10px 1px;
-    background-color: #33333375;
-    margin: 2rem 0;
-    border-radius: 1rem;
+    margin: 2.5rem;
 }
 .post-1, .post-2, .post-3, .post-4 h2, p {
     text-align: center;
@@ -108,7 +111,7 @@ main {
 .sidepost-1, .sidepost-2, .sidepost-3 {
     margin: 2rem 0;
     padding: 1rem 0;
-    background-color: #33333375;
+    background-color: #007da760;
     border-radius: 1rem;
 }
 .sidepost-1, .sidepost-2 {
@@ -125,12 +128,23 @@ main {
 footer {
     clear: both;
     position: relative; 
+    margin-top: 5rem;
 }
 .footer {
-    background: #33333375;
+    background: #007ea760;
     height: 12vh;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     box-shadow: 0px 0px 20px 4px #000000;
+}
+
+
+    /* Galleri */
+
+.bilder {
+    letter-spacing: 0.5rem;
+}
+.bilder img {
+    height: 30vh;
 }
 

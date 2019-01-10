@@ -25,7 +25,6 @@ body {
 
 nav {
     height: 8.5rem;
-    background-size: cover;
     line-height: 8.5rem;
     border-radius: 2rem;
     box-shadow: #000000 0px 0px 10px 1px;
@@ -57,12 +56,15 @@ nav .links a:hover {
     float: right;
 }
 
+/* Posts */
 main {
     width: 90%;
     margin: 0 auto;
     color: #fff;
     font-weight: 700;
 }
+
+/* Main posts */
 .posts {
     width: 65%;
     text-align: center;
@@ -82,6 +84,7 @@ main {
 .post-1, .post-2, .post-3, .post-4 h2, p, img {
     padding: 1rem;
 }
+
 .post-1 img {
     width: 30vh;
 }
@@ -94,25 +97,40 @@ main {
 .post-4 img {
     width: 30vh;
 }
-.side-post {
+
+/* SIDE POSTS */
+.sidepost {
     text-align: center;
     float: right;
     width: 25%;
     padding: 2.5rem;
 }
-.side-post-1, .side-post-2, .side-post-3 {
+.sidepost-1, .sidepost-2, .sidepost-3 {
     margin: 2rem 0;
     padding: 1rem 0;
     background-color: #33333375;
     border-radius: 1rem;
 }
-.side-post-1, .side-post-2 {
+.sidepost-1, .sidepost-2 {
     box-shadow: #000000 0px 0px 10px 1px;
 }
-.side-post-1 img {
+.sidepost-1 img {
     width: 150px;
 }
-.side-post-2 img {
+.sidepost-2 img {
     width: 150px;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    position: relative; 
+}
+.footer {
+    background: #33333375;
+    height: 12vh;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    box-shadow: 0px 0px 20px 4px #000000;
 }
 

@@ -5,8 +5,6 @@
     text-decoration: none
 }
 
-/* https://coolors.co/ffffff-00a7e1-00171f-003459-007ea7 */
-       /* ffffff   00a7e1  00171f  003459  007ea7 */
 
 html {
     /* Gör så font-size rooten blir till 10px och sedan kan användas
@@ -15,27 +13,34 @@ html {
 }
 
 body {
-    /* background-image: url(/img/hero.jpg); */
-    background-size: 205vh 115vh;
-    background-repeat: no-repeat;
+    /* Bakgrundsfärgen till sidan */
     background-color: rgb(230, 230, 230);
 }
     /* Navbar */
 nav {
     height: 8.5rem;
+    /* Gör så att det blir i mitten i objectet och man tar samma height och lägger in de i linehieght */
     line-height: 8.5rem;
+    /* Border radius rundar av kanterna på objectet */
     border-radius: 2rem;
+    /* Lägger till en skugga på objectet */
     box-shadow: #000000 0px 0px 10px 1px;
     background-color: #33333340;
     width: 95%;
+    /* Gör mer utrymme mellan olika object */
     margin: 2rem auto;
+    /* Transformerar objectet till olika saker och i detta fall gör man så att man
+     kan göra left och top utan några problem å lägga objectet i mitten av sidan */
     transform: translate(-50%, -50%);
     top: 4rem;
     left: 50%;
     position: absolute;
+    /* Gör så att den ligger 1000 på Z-axeln som går mot eller bort från dig och inte 2d som man ser sidan x och y
+    Och om man gör så att man lägger minus så borde den lägga sig under alla object istället för som nu över alla object */
     z-index: 1000;
 }
 nav h1, .links {
+    /* Lägger sig på sidan och då är det enkelt å använda float */
     display: inline;
 }
 nav h1 {
@@ -63,18 +68,29 @@ nav .links a:hover {
 header {
     width: 100%;
     height: 80vh;
+    /* Lägger in en bakgrund */
     background-image: url(/img/hero2.jpg);
+    /* Lägger bilden i centern av skärmen som man kan läsa */
     background-position: center;
+    /* Gör så att den använder hela bilden till sidan och med heighten så tog jag bort 20vh som man inte
+      kan se så att det ser lite bättre ut för att då vet man att man kan scrolla ner för att se postesen */
     background-size: cover;
+    /* Tar position från sitt parent element */
     position: relative;
+    /* Lägger in en border i botten av objectet */
     border-bottom: #333333 5px solid;
     box-shadow: #000000 0px 0px 25px 1px;
     margin-bottom: 3rem;
 }
 header h1 {
+    /* Ändrar text färgen */
     color: #fff;
+    /* Lägger till en skugga till texten använde någon sida för att hjälpa mig göra detta */
     text-shadow: 2px 2px 0 #000000, 4px 4px 0 #333333, 2px 3px 2px #000000;
+    /* Text storlek */
     font-size: 10vh;
+    /* Sätter sig fast på en position och sedan kan man ändra på vart den sitter men den 
+    kommer alltid sitta där */
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -87,6 +103,7 @@ main {
     width: 90%;
     margin: 0 auto;
     color: #fff;
+    /* Tjocklecken på texten */
     font-weight: 700;
 }
 
@@ -95,9 +112,12 @@ main {
     width: 65%;
     text-align: center;
     font-size: 1.2rem;
+    /* Mer mellan rum mellan karaktärerna */
     letter-spacing: 1px;
     font-weight: 400;
+    /* Mer utrymme mellan saker i objectet */
     padding: 2.5rem;
+    /* Gör så den åker vänster till höger */
     float: left;
     box-shadow: #000000 0px 0px 10px 1px;
     background-color: #00000040;
@@ -138,6 +158,7 @@ main {
     font-size: 1.3rem;
 }
 .sidepost a {
+    /* tar bort utseendet som är placerat på text innan */
     text-decoration: none;
     color: #333333;
 }
@@ -166,6 +187,7 @@ main {
 
 /* Footer */
 footer {
+    /* Jag har seriöst ingen anning vad clear gör men det gjorde så att footern la sig längst ner iaf */
     clear: both;
     position: relative; 
     margin-top: 5rem;

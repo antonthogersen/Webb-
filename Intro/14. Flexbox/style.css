@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    /* Bestämmer riktning för items
+    Row = rad Column = ovanpå varandra */
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    /* Kortare version på ovan */
+    flex-flow: row wrap;
+    /* Justify går ever main axis */
+    justify-content: space-evenly;
+    /* Definierar startposition för items */
+    /* align-items: stretch; */
+    /* Som justifycontent fast andra axis */
+    align-content: space-around;
+}
+
+
+body {
+    background-color: #333333;
+    margin: 0 auto;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 42, 255);
+    font-size: 50px;
+    line-height: 200px;
+    text-align: center;
+}
+
+.box:nth-of-type(odd) {
+    background-color: rgb(255, 0, 0);
+    height: 240px;
+}

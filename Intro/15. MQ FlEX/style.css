@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html {font-size: 62.5%;}
+
+nav {
+    height: 6rem;
+    background-color: #0015ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    line-height: 6rem;
+    box-shadow: 0px 4px 2px #000000;
+}
+
+.brand {
+    color: #fff700;
+    font-weight: 700;
+    font-size: 4rem;
+    margin-left: 2rem;
+    padding: 0 1rem;
+}
+
+#toggle {display: none;}
+/* Sibling selector */
+#toggle:checked ~ .links {display: flex;}
+
+label {
+    background-color: #0015ff;
+    color: #fff700;
+    font-size: 4rem;
+    padding: 0 2rem;
+    user-select: none;
+    cursor: pointer;
+    z-index: 1000;
+    position: absolute;
+    right: 0;
+}
+
+.links {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: #0015ff;
+    height: 100%;
+    width: 100%;
+    z-index: 500;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.links a {
+    color: #ffffff;
+    font-size: 2.5rem;
+    padding: 2rem 3rem; 
+    text-decoration: none;
+}
+.links a:hover {
+    color: #333333;
+    background-color: #fff700;
+    box-shadow: 0px 4px 18px;
+}
+
+header {
+    height: 60vh;
+    background: url(/knugen.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.info {
+    padding: 2rem;
+    margin: 1rem 0;
+    box-shadow: 0px 4px 18px 3px #000000;
+
+}
+.info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.info p {
+    font-size: 2rem;
+}
+
+footer {
+    height: 20vh;
+    background-color: #0015ff;
+    color: #fff;
+    font-size: 2rem;
+
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        width: 95%;
+        margin: 3rem auto;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    main {
+        margin: 5rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .info {
+        width: 45%;
+    }
+
+    label {
+        display: none;
+    }
+    .links {
+        display: block;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        justify-content: flex-end;
+        align-items: center;
+    }
+   
+}

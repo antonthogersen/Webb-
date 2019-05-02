@@ -3,43 +3,211 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     font-size: 0.625rem;
 }
 
+body {
+    width: 100%;
+    margin: 0 auto;
+    background: #005070;
+    font-family: 'Slabo 27px', serif;
+}
+
+/* Navbar :) */
 nav {
     width: 100%;
-    height: 80px;
-    line-height: 80px;
-    background: #333333;
+    height: 100px;
+    line-height: 100px;
+    background: #005070;
 }
 
-header {
-    height: 80vh;
+nav a {
+    text-decoration: none;
+}
+
+nav a:nth-of-type(4), .navLinks {
+    display: inline;
     text-align: center;
-    background: rgb(148, 0, 30);
+}
+
+nav a:nth-of-type(1) {
+    font-size: 50px;
+    padding: 0 25px;
+    color: #fff;
+    text-shadow: #000000 3px 3px 3px;
+}
+
+nav .navLinks a {
+    float: right;
+    margin-right: 25px;
+    padding: 0 40px;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: #000000 3px 3px 3px;
+}
+
+nav .navLinks a:hover {
+    color: #fff;
+    text-shadow: #fff 0px 0px 1px;
+    background: #005777;
+    border-radius: 5px;
+}
+
+
+
+
+/* Headers :) */
+
+/* Main template för alla headers */
+header {
+    text-align: center;
+    color: #fff;
+    border-bottom: #000000 2px solid;
+    border-top: #000000 2px solid;
+}
+.headerText {
+    width: 50%;
+    text-shadow: #000000 3px 3px 2px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 header h1 {
-    font-size: 10rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
+    font-size: 15rem;
 }
+
 header h3 {
     font-size: 3rem;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%)
 }
 
+/* Startsidans header */
+.headerStart {
+    height: 75vh;
+    background: url(/buboHeader.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Fjallugglansidans header */
+
+/* Berguvensidans header */
+
+
+
+
+/* Main :) */
 main {
-    background: #fff000;
-    height: 10vh;;
+    margin: 0 auto;
+    width: 90%;
 }
 
+/* Main utseende för info boxarnas utseende */
+.info-box, .info-bubo {
+    box-shadow: #000000 3px 3px 10px;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+.info-box h2 {
+    text-decoration: none;
+    display: block;
+    color: #000000;
+    font-size: 5rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.info-bubo h2 {
+    text-decoration: none;
+    display: block;
+    color: #000000;
+    font-size: 7rem;
+    font-weight: 600;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.info-bubo p {
+    text-decoration: none;
+    text-align: justify;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 10px 0;
+}
+.info-box p {
+    text-decoration: none;
+    text-align: justify;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+/* Bobu informationen */
+.info-bubo {
+    width: 86.5%;
+    margin: 40px auto;
+    padding: 25px;
+    text-align: justify;
+    background: #ececec;
+}
+
+/* Bubo IMG */
+.img-bubo img {
+    width: 80%;
+    margin: 2% 10%;
+    border: #fff 2px solid;
+    box-shadow: 4px 4px 20px 4px ;
+}
+.img-bubo h1 { 
+    text-align: center;
+    font-size: 4rem;
+    margin-top: -8rem;
+    color: #fff;
+    text-shadow: #000000 3px 3px 0px;
+}
+
+/* Fjällugglan och Berguvens information */
+.info-box {
+    width: 40%;
+    height: 400px;;
+    padding: 25px;
+    margin-top: 7rem;
+    margin-left: 6.5%;
+    background: #ececec;
+    display: inline-block;
+    vertical-align: top;
+}
+#moreText {
+    background: #cccccc;
+    padding: 5px;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5rem;
+    cursor:pointer;
+}
+
+.img-bubo2 img {
+    width: 40%;
+    height: 500px;
+    margin-top: -1rem;
+    margin-left: 6.5%;
+    border: #fff 2px solid;
+    box-shadow: 4px 8px 20px 4px;
+    border-radius: 3px;
+}
+
+/* Footer :) */
 footer {
-    background: #333333;
+    border-top: #000000 2px solid;
+    margin-top: 10rem;
+    background: #005777;
     height: 10vh;
+    position: relative;
+    bottom: 0;
 }

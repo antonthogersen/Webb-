@@ -58,14 +58,17 @@ nav .navLinks a:hover {
 
 
 
-/* Headers :) */
-
-/* Main template för alla headers */
+/* Header :) */
 header {
     text-align: center;
     color: #fff;
     border-bottom: #000000 2px solid;
     border-top: #000000 2px solid;
+    height: 75vh;
+    background: url(/buboHeader.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .headerText {
     width: 50%;
@@ -83,124 +86,12 @@ header h3 {
     font-size: 3rem;
 }
 
-/* Startsidans header */
-.headerStart {
-    height: 75vh;
-    background: url(/buboHeader.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Fjallugglansidans header */
-
-/* Berguvensidans header */
-
-
-
-
 /* Main :) */
 main {
     margin: 0 auto;
-    width: 90%;
+    width: 95%;
 }
 
-/* Main utseende för info boxarnas utseende */
-.info-box, .info-bubo {
-    box-shadow: #000000 3px 3px 10px;
-    border-radius: 5px;
-    margin-top: 25px;
-}
-
-.info-box h2 {
-    text-decoration: none;
-    display: block;
-    color: #000000;
-    font-size: 5rem;
-    font-weight: 600;
-    text-decoration: underline;
-    text-align: center;
-}
-
-.info-bubo h2 {
-    text-decoration: none;
-    display: block;
-    color: #000000;
-    font-size: 7rem;
-    font-weight: 600;
-    text-decoration: underline;
-    text-align: center;
-}
-
-.info-bubo p {
-    text-decoration: none;
-    text-align: justify;
-    font-size: 1.8rem;
-    font-weight: 500;
-    padding: 10px 0;
-}
-.info-box p {
-    text-decoration: none;
-    text-align: justify;
-    font-size: 1.8rem;
-    font-weight: 500;
-    padding: 10px 0;
-}
-
-/* Bobu informationen */
-.info-bubo {
-    width: 86.5%;
-    margin: 40px auto;
-    padding: 25px;
-    text-align: justify;
-    background: #ececec;
-}
-
-/* Bubo IMG */
-.img-bubo img {
-    width: 80%;
-    margin: 2% 10%;
-    border: #fff 2px solid;
-    box-shadow: 4px 4px 20px 4px ;
-}
-.img-bubo h1 { 
-    text-align: center;
-    font-size: 4rem;
-    margin-top: -8rem;
-    color: #fff;
-    text-shadow: #000000 3px 3px 0px;
-}
-
-/* Fjällugglan och Berguvens information */
-.info-box {
-    width: 40%;
-    height: 400px;;
-    padding: 25px;
-    margin-top: 7rem;
-    margin-left: 6.5%;
-    background: #ececec;
-    display: inline-block;
-    vertical-align: top;
-}
-#moreText {
-    background: #cccccc;
-    padding: 5px;
-    border: none;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1.5rem;
-    cursor:pointer;
-}
-
-.img-bubo2 img {
-    width: 40%;
-    height: 500px;
-    margin-top: -1rem;
-    margin-left: 6.5%;
-    border: #fff 2px solid;
-    box-shadow: 4px 8px 20px 4px;
-    border-radius: 3px;
-}
 
 /* Footer :) */
 footer {

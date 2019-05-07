@@ -11,7 +11,7 @@ html {
 body {
     width: 100%;
     margin: 0 auto;
-    background: #005070;
+    background: #fff;
     font-family: 'Slabo 27px', serif;
 }
 
@@ -20,14 +20,14 @@ nav {
     width: 100%;
     height: 100px;
     line-height: 100px;
-    background: #005070;
+    background: #855400;
 }
 
 nav a {
     text-decoration: none;
 }
 
-nav a:nth-of-type(4), .navLinks {
+nav a, .navLinks {
     display: inline;
     text-align: center;
 }
@@ -51,7 +51,7 @@ nav .navLinks a {
 nav .navLinks a:hover {
     color: #fff;
     text-shadow: #fff 0px 0px 1px;
-    background: #005777;
+    background: #ae6e00;
     border-radius: 5px;
 }
 
@@ -89,7 +89,35 @@ header h3 {
 /* Main :) */
 main {
     margin: 0 auto;
-    width: 95%;
+    width: 75%;
+}
+
+.info-box {
+    width: 800px;
+    background: whitesmoke;
+    padding: 3rem;
+    margin: 5rem auto;
+    box-shadow: #000000 2px 2px 5px 1px;
+    border-radius: 5px;
+}
+
+.info-box h1 {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.info-box p {
+    font-size: 1.8rem;
+    text-align: justify;
+}
+
+.info-box img {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+    max-height: 50rem;
+    object-fit: contain;
 }
 
 
@@ -97,8 +125,46 @@ main {
 footer {
     border-top: #000000 2px solid;
     margin-top: 10rem;
-    background: #005777;
+    background: #3e8031;
     height: 10vh;
     position: relative;
     bottom: 0;
+}
+
+
+
+
+@media only screen and (max-width: 1023px) {
+    nav .navLinks a {
+        font-size: 2.8rem;
+        padding: 0 1rem;
+    }
+    nav a:nth-of-type(4) {
+        font-size: 4rem;
+
+    }
+    
+    main {
+        width: 80%;
+    }
+    
+    .info-box {
+        width: 90%;
+        
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .info-box h1 {
+        font-size: 3.5rem;
+    }
+
+    .info-box p {
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+
 }

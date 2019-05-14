@@ -2,7 +2,7 @@
 const numberInput = document.querySelector('#number');
 const btnNumber = document.querySelector('#btnNumber');
 const container = document.querySelector('#container');
-const btnClear = document.querySelector('#clearNumber')
+const btnClear = document.querySelector('#clearNumber');
 // Lägg till händelse-lyssnare
 // Functionen går endast att använda i för denna knap eftersom den ligger i dens parants
 btnNumber.addEventListener('click', function() {

@@ -1,5 +1,5 @@
 const linkMenu = document.querySelector('#menu');
-const clickMenu = document.querySelector('#mobileNavbar')
+const clickMenu = document.querySelector('#menuButton')
 
 clickMenu.addEventListener('click', function(openMenu){
     

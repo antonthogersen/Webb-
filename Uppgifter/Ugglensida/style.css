@@ -19,16 +19,15 @@ body img {
     width: 100%;
 }
 
-nav {
-    height: 70px;
-    z-index: 1000;
-}
+/* Nav baren */
 
-.navcolor {
+nav {
+    z-index: 1000;
     background-color: #509b3b;
     height: 70px;
     line-height: 70px;
     width: 100%;
+    border-bottom: #5555 2px solid;
 }
 
 nav h1 {
@@ -38,52 +37,87 @@ nav h1 {
     text-shadow: 4px 3px 0px #555;
     margin-left: 2rem;
 }
-
+/* Hamburger menyns länkar */
 #menu {
     display: none;
-    height: 60px;
+    width: 100%;
+    float: right;
     background: #509b3b;
     text-align: center;
-    position: fixed;
-    width: 100%
+    position: sticky;
+    margin-top: -5px;
+    z-index: 100;
+    border-bottom: #5555 2px solid;
+    border-top: #5555 2px solid;
 }
 
-.navLinks a {
-    padding: 0 6rem;
+#menu a {
+    padding: 1rem 6rem;
     font-size: 3rem;
     text-decoration: none;
     color: #fff;
     text-shadow: 3px 3px 0px #555;
 }
 
-#mobileNavbar {
+#menuButton {
     float: right;
-    margin-top: 10.11px;
+    margin-top: 15px;
     margin-right: 3rem;
     border: none;
     background: transparent;
     cursor: pointer;
 }
-
+/* Hamburger iconen */
 nav i {
     color: #fff;
-    font-size: 4rem;
+    font-size: 40px;
     text-shadow: 3px 3px 0px #555;
 }
 
 
 /* Header */
 header {
-    background: url(/Galleri/berguv2.jpg);
-    height: 80vh;
+    background: url(/Galleri/berguv3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
     text-align: center;
     color: #fff;
-    text-shadow: 5px 5px 0px #555;
+    text-shadow: 5px 3px 0px #555;
 }
+/* Header titlarna */
 header h1 {
-    font-size: 25rem;
-    padding-top: 15rem;
+    font-size: 6rem;
+    padding-top: 25rem;
 }
 header h3 {
-    font-size: 5rem;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+
+/* Header  */
+main {
+    width: 95%;
+    margin: 0 auto;
+}
+main h1 {
+    text-align: center;
+}
+
+.info-box {
+    margin: 0 auto;
+}
+.info-box p {
+    text-align: justify;
+    font-size: 1.35rem;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
 }

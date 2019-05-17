@@ -58,7 +58,7 @@ nav h1 {
 
 #mobileNavbar {
     float: right;
-    margin-top: 10.11px;
+    margin-top: 15px;
     margin-right: 3rem;
     border: none;
     background: transparent;
@@ -75,6 +75,7 @@ nav i {
 /* Header */
 header {
     background: url(/Galleri/berguv2.jpg);
+    background-position: center;
     height: 80vh;
     text-align: center;
     color: #fff;

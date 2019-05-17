@@ -29,7 +29,6 @@ nav {
     height: 70px;
     line-height: 70px;
     width: 100%;
-    border-bottom: #555 2px solid;
 }
 
 nav h1 {
@@ -42,18 +41,10 @@ nav h1 {
 
 #menu {
     display: none;
+    height: 60px;
+    background: #509b3b;
     text-align: center;
-    position: sticky;
-    height: 60px;
-    background: #509b3b;
-    width: 100%;
-    border-bottom: #555 2px solid;
-}
-
-#menu a {
-    height: 60px;
-    line-height: 60px;
-    background: #509b3b;
+    position: fixed;
     width: 100%
 }
 
@@ -67,23 +58,13 @@ nav h1 {
 
 #mobileNavbar {
     float: right;
-    margin-top: 15px;
+    margin-top: 10.11px;
     margin-right: 3rem;
     border: none;
     background: transparent;
     cursor: pointer;
 }
 
-#mobileNavbar::after {
-    
-}
-
-#mobileNavbar:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
-  }
 nav i {
     color: #fff;
     font-size: 4rem;
@@ -94,44 +75,15 @@ nav i {
 /* Header */
 header {
     background: url(/Galleri/berguv2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     height: 80vh;
     text-align: center;
     color: #fff;
     text-shadow: 5px 5px 0px #555;
 }
 header h1 {
-    font-size: 10rem;
+    font-size: 25rem;
     padding-top: 15rem;
 }
 header h3 {
     font-size: 5rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@keyframes yourAnimation{
-        0%{
-            transform: rotate(0) scale(1) translateY(-200%);
-            }
-        99%{
-            transform: rotate(0) scale(1) translateY(0);
-            }
-    }
-    
-    #mobileNavbar{
-        animation: yourAnimation 1s 1 0s linear;
-    }

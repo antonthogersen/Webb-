@@ -5,6 +5,7 @@
 }
 
 html {
+    /* Gör så att remmen på 10px */
     font-size: 0.625rem;
 }
 
@@ -34,18 +35,22 @@ nav h1 {
     font-size: 4rem;
     float: left;
     color: #fff;
+    /* lägger till en shadow bara till texten */
     text-shadow: 4px 3px 0px #555;
     margin-left: 2rem;
 }
 /* Hamburger menyns länkar */
 #menu {
-    display: none;
+    /* Använder display none så att hamburgar menyn inte syns på en gång */
+    display: none; 
     width: 100%;
     float: right;
     background: #509b3b;
     text-align: center;
+    /* Gör så att den sitter fast och rör inte på sig */
     position: sticky;
     margin-top: -5px;
+    /* Gör så att den läggs på 100z som är emot eller bort från dig */
     z-index: 100;
     border-bottom: #5555 2px solid;
     border-top: #5555 2px solid;
@@ -63,8 +68,11 @@ nav h1 {
     float: right;
     margin-top: 15px;
     margin-right: 3rem;
+    /* Tar bort borden som läggs till automatiskt utav att det är en png */
     border: none;
+    /* Har transparent så att pngen fungerar som den ska utan att få en grå background */
     background: transparent;
+    /* Fick lov att lägga till en pointer så man ser att det är en knapp */
     cursor: pointer;
 }
 /* Hamburger iconen */
@@ -77,10 +85,12 @@ nav i {
 
 /* Header */
 header {
+    /* Lägger till en background och anvädnder background size så att en
+     passar heighten och sedan centrerar jag den med background position */
     background: url(/Galleri/berguv4.jpg);
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 65vh;
     text-align: center;
     color: #fff;
     text-shadow: 5px 3px 0px #555;
@@ -88,6 +98,9 @@ header {
 /* Header titlarna */
 header h1 {
     font-size: 6rem;
+    /* Gör så att den sitter fast på den exakta positionen hela tiden
+    Och med -50%, -50% gör så att den sitter perfect så att man skriva
+    top och left och få den i mitten från sidanq */
     transform: translate(-50%, -50%);
     position: absolute;
     width: 100%;
@@ -107,32 +120,105 @@ header h3 {
 
 /* Header  */
 main {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
+    background: #55555530;
+    
 }
 main h1 {
     text-align: center;
 }
 
 .info-box {
-    margin: 0 auto;
+    margin: 75px auto;
+    
+}
+
+.info-box h1 {
+    font-size: 5rem;
 }
 .info-box p {
+    /* Gör så att den blir mer lätt läst */
     text-align: justify;
     font-size: 1.35rem;
     padding: 1rem;
 }
+.info-box img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    padding: 1rem 0
+}
+
+.img-between {
+    width: 80%;
+    margin: 10px auto;
+    border-top: #555 2px solid;
+    border-bottom: #555 2px solid;
+}
+.img-between h1 {
+    font-size: 3rem;
+}
+
+footer {
+    height: 110--px;
+    background: #509b3b;
+    border-top: #5555 2px solid;
+}
+
+footer h1 {
+    font-size: 2.5rem;
+    margin-left: 40px;
+}
+footer li {
+    font-size: 1.6rem;
+    margin-left: 40px;
+}
+
+
+/* Galleriet */
+
+.bilder img {
+    height: 30vh;
+    width: 90%;
+    /* gör så att bilden passar in i hieghten och widthen */
+    object-fit: cover;
+    border: #555 2px solid;
+    margin: 2rem;
+    background-color: #fff
+}
+
+
+
+/* Använder min-width för jag gjorde mobile first om jag inte gjorde det
+skulle jag ha tagit max-width annars är detta bara responsabilitet */
 
 @media screen and (min-width: 1025px) {
-   body {
-       width: 1024px;
-   }
+    body {
+        min-width: 1024px;
+        width: 70%;
+    } 
+    
+    main {
+        min-width: 1024px;
+        width: 80%;
+    }
+    
+    
+    
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 769px) {
+    header h1 {
+        font-size: 10rem;
+    }
+    .info-box p {
+        width: 75%;
+        margin: 0 auto;
+        font-size: 1.7rem;
+    }
 
-}
-
-@media screen and (max-width: 768px) {
-
+    .bilder img {
+        width: 29.2%;
+    }
 }

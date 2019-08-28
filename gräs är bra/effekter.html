@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+    <title>Gräs är bra</title>
+</head>
+<body>
+    <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <h2 class="logo_text">
+                        Droglabbet
+                    </h2>
+                </a>
+            </div>
+            
+            <div class="navbar_links">
+                <a href="om.html" class="navbar_links-link">Om ämnet</a>
+                <a href="effekter.html" class="navbar_links-link">Effekter</a>
+                <a href="slutsats.html" class="navbar_links-link">Slutsatser</a>
+            </div>
+    </nav>
+    
+    <header>
+
+    </header>
+    <main>
+        <div class="effekter-container">    
+                <div class="h2-effekter-text">  
+                    <h2>Effekter</h2>
+                </div> 
+                    <div class="text-effekter_p">  
+                            <p>
+                                    Tetrahydrocannabinol är det huvudsakliga ämnet  som gör att det blir en effekt. Cannabisindustrin omsätter stora mängder pengar varje år men eftersom den största delen av köpandet av cannabis säljs över den svarta marknaden är det mesta oskattat. Detta gör att det är svårt att få fram klar statistik över vad en stat eller land får för ekonomisk påverkan av industrin. Enligt en del rapporter verkar priset per gram på marijuana ligga på runt 100 kr. Inköpskostnaden för cannabis under ett typiskt år ligger på mellan ca 300- till 400 miljoner.
+                                </p>
+                    <div class="text-effekter_p_2">
+                        <p>Hösten 2014 sammanställde Institutet för säkerhets- och utrikespolitik, ISDP, kunskapsläget om narkotikans miljöpåverkan i “Knark – en miljökatastrof.” Rapporten beskriver hur utomhusodling av cannabis kräver mycket av både markytor, bevattningar och insektsmedel. Inomhusodlingar slukar å sin sida enorma mängder el för att hålla plantorna vid liv, i USA förbrukade legal inomhusodling av medicinsk marijuana år 2011 en procent av all el i landet.
+                                – Dessutom förorenar bekämpningsmedel och konstgödsel som når avloppssystemen såväl grundvatten som större vattenbassänger. Vidare kan partiklar förorena den lokala luftkvaliteten, konstaterar Benny Van Camp. 
+                                
+                                </p>
+                                <div class="text-effekter_p_3"> 
+                                        <p>Det finns många olika cannabissorter men de effekterna de brukar ha är att man blir mer glad och nästan all stress och omgivning försvinner. Man brukar bara tänka på sig själv. De vanligaste negativa effekterna är att man blir väldigt torr i munnen och att man får röda ögon. Man kan också få ont i huvudet och vara snurrig. Man kan få lungcancer enklare och det ökar risken för psykiska sjukdomar. Man har också svårare att kontrollera sig själv så det är större skaderisk.</p>
+                                </div>
+                            <div class="text-effekter_p_4">
+                                <p>Cannabis har mer påverkan än bara på din hälsa, det är ofta en stor social påverkan som  de flesta inte tänker på. Det är lätt att hamna i fel kretsar och börja testa andra droger som är mycket värre än bara cannabis. När man är i ett beroende är det som att inget annat spelar någon roll, det är bara drogen som kan göra en glad. I vissa fall så isolerar man sig själv från både familj och vänner. Om man blir påkommen med att inneha cannabis leder det oftast till polisinsatser, böter och i vissa fall fängelse. Det är din rätt att få hjälp från samhället om du har ett beroende, det kan vara genom samtal eller behandlingshem.
+                                    </p>
+                            </div>
+
+
+                    </div>                
+
+                    </div>
+            </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-us">
+           <h3>Skapare</h3> 
+            
+            <ul>    
+                <li>    
+                     Anton   
+                </li>
+                <li>
+                    Ida
+                </li>
+                <li>
+                    Joel K
+                </li>
+                <li>
+                    Patrik
+                </li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+                <h3>Kontakta oss!</h3>
+
+                 <ul>
+                     <li>Telf: 07212121212</li>
+                     <form>
+                         <input type="text" value="Här kan du skicka ett mail till oss!">
+                     </form>
+                 </ul>   
+        </div>
+        <div class="footer-socialmedia">
+            <a href="https://www.facebook.com/worlddrugcampaign/" target="blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/drugslab_bnnvara/?hl=nl" target="blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/nelliebenner" target="blank">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCvRQKXtIGcK1yEnQ4Te8hWQ/featured" target="blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+
+    </footer>
+
+    <div class="h1-effekter">
+
+    </div>
+
+    
+   <!-- Canvas - visar grafen -->
+    <div class="graf">
+        <canvas id="myChart" width="400" height="400"></canvas>
+    </div>
+
+    <script>
+    var ctx = document.getElementById("myChart").getContext('2d');
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ["Canada (2018)", "Israel(2017)", "USA (2014)", "Chile (2014)", "Sweden (2014)", "Mexico (2011)"],
+            datasets: [{
+                label: 'Användning av cannabis i olika länder (%)',
+                data: [33, 27, 16, 11, 8, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
+    </script>
+
+</body>
+</html>
